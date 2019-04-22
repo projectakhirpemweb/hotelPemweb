@@ -6,8 +6,21 @@
     <a href="" name="header"><H1> Nabonk Bank </H1> </a>
 </head>
 <body>
-    <div> <a href = 'View/v_login.php'> Login </a> </div>
-    <div> <a href = 'View/v_register.php'> Register </a> </div>
+    <?php
+    session_start();
+    if (!isset($_SESSION["user"])) {
+        echo "
+            <div> <a href = 'View/v_login.php'> Login </a> </div>
+            <div> <a href = 'View/v_register.php'> Register </a> </div>
+            ";
+    } else {
+        echo "
+            <div> <a href = ''> Transfer </a> </div>
+            <div> <a href = ''> Cek Saldo </a> </div>
+            <div> <a href = 'Controller/index.php?logout=true'> Logout </a> </div>
+            ";
+    }
+    ?>
     <div>
         <h3> Nabonk Bank </h3>
         <p> Nabonk Bank adalah bank yang berasal dari Malang, yang dibuat oleh 3 mahasiswa yang terkenal gabutnya.
