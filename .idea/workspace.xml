@@ -1,122 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cc19af2-e59a-4917-9376-1da45766a518" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Nabonk-bank/Controller/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nabonk-bank/Model/m_databaseUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nabonk-bank/koneksiMVC.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nabonk-bank/Controller/authentication.php" beforeDir="false" afterPath="$PROJECT_DIR$/Nabonk-bank/Controller/authentication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nabonk-bank/View/v_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Nabonk-bank/View/v_login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nabonk-bank/View/v_register.php" beforeDir="false" afterPath="$PROJECT_DIR$/Nabonk-bank/View/v_register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nabonk-bank/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Nabonk-bank/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="b24a7de2-584b-4d5e-97c7-bf04ee3086b3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/Hotel/composer.json</pharConfigPath>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nabonk-bank/View/v_login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nabonk-bank/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nabonk-bank/Controller/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nabonk-bank/View/v_register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="87" lean-forward="true" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nabonk-bank/Controller/authentication.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="96" selection-start-line="23" selection-start-column="96" selection-end-line="23" selection-end-column="96" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Hotel/application/views/welcome_message.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Nabonk-bank/Model/m_databaseUser.php">
+        <entry file="file://$PROJECT_DIR$/Hotel/application/controllers/Hotel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="104" lean-forward="true" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
+            <state relative-caret-position="595">
+              <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nabonk-bank/koneksiMVC.php">
+        <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_orderPage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hotel/system/database/DB_driver.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="569">
+              <caret line="690" column="29" selection-start-line="690" selection-start-column="29" selection-end-line="690" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_formRoom.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="52" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hotel/application/models/m_formOrder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1640">
+              <caret line="105" column="67" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="67" />
+              <folding>
+                <element signature="n#style#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#1;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#2;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#3;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#4;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#5;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#6;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#7;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#9;n#table#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_formPendaftaran.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/v_login.php" />
-        <option value="$PROJECT_DIR$/v_register.php" />
-        <option value="$PROJECT_DIR$/View/v_login.php" />
-        <option value="$PROJECT_DIR$/View/v_register.php" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/Nabonk-bank/koneksiMVC.php" />
-        <option value="$PROJECT_DIR$/Nabonk-bank/index.html" />
-        <option value="$PROJECT_DIR$/Nabonk-bank/View/v_login.php" />
-        <option value="$PROJECT_DIR$/Nabonk-bank/index.php" />
-        <option value="$PROJECT_DIR$/Nabonk-bank/View/v_register.php" />
-        <option value="$PROJECT_DIR$/Nabonk-bank/Controller/authentication.php" />
-        <option value="$PROJECT_DIR$/Nabonk-bank/Controller/index.php" />
-        <option value="$PROJECT_DIR$/Nabonk-bank/Model/m_databaseUser.php" />
+        <option value="$PROJECT_DIR$/Hotel/.htaccess" />
+        <option value="$PROJECT_DIR$/Hotel/application/config/autoload.php" />
+        <option value="$PROJECT_DIR$/Hotel/application/config/database.php" />
+        <option value="$PROJECT_DIR$/Hotel/application/controllers/Welcome.php" />
+        <option value="$PROJECT_DIR$/Hotel/application/config/config.php" />
+        <option value="$PROJECT_DIR$/Hotel/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/Hotel/application/views/v_formRoom.php" />
+        <option value="$PROJECT_DIR$/Hotel/application/views/v_formPendaftaran.php" />
+        <option value="$PROJECT_DIR$/Hotel/application/models/m_formOrder.php" />
+        <option value="$PROJECT_DIR$/Hotel/application/views/v_orderPage.php" />
+        <option value="$PROJECT_DIR$/Hotel/application/controllers/Hotel.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-5" />
-    <option name="width" value="1346" />
-    <option name="height" value="788" />
+    <option name="x" value="-8" />
+    <option name="y" value="14" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -127,25 +117,26 @@
         <subPane>
           <expand>
             <path>
-              <item name="ProjectAkhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectAkhir" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectPemweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectPemweb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectAkhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectAkhir" type="462c0819:PsiDirectoryNode" />
-              <item name="Nabonk-bank" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectPemweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectPemweb" type="462c0819:PsiDirectoryNode" />
+              <item name="Hotel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectAkhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectAkhir" type="462c0819:PsiDirectoryNode" />
-              <item name="Nabonk-bank" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectPemweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectPemweb" type="462c0819:PsiDirectoryNode" />
+              <item name="Hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectAkhir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectAkhir" type="462c0819:PsiDirectoryNode" />
-              <item name="Nabonk-bank" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectPemweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectPemweb" type="462c0819:PsiDirectoryNode" />
+              <item name="Hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -155,16 +146,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjectAkhir" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\xampp\htdocs\ProjectPemweb\Nabonk-bank\View" />
-    </key>
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -183,27 +169,33 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5cc19af2-e59a-4917-9376-1da45766a518" name="Default Changelist" comment="" />
-      <created>1555710231820</created>
+      <changelist id="b24a7de2-584b-4d5e-97c7-bf04ee3086b3" name="Default Changelist" comment="" />
+      <created>1555910824951</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1555710231820</updated>
-      <workItem from="1555710233891" duration="3221000" />
-      <workItem from="1555910894244" duration="6905000" />
+      <updated>1555910824951</updated>
+      <workItem from="1555910832100" duration="58000" />
+      <workItem from="1556529012254" duration="3211000" />
+      <workItem from="1556611479737" duration="946000" />
+      <workItem from="1556627782823" duration="2182000" />
+      <workItem from="1556637127464" duration="9269000" />
+      <workItem from="1556760987464" duration="1207000" />
+      <workItem from="1556773636975" duration="8830000" />
+      <workItem from="1556950638819" duration="7325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10126000" />
+    <option name="totallyTimeSpent" value="33028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2579365" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2730159" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32977098" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -219,81 +211,128 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2527216" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32977098" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/View/v_login.php" />
-    <entry file="file://$PROJECT_DIR$/View/v_register.php" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/Nabonk-bank/View/v_login.php">
+    <entry file="file://$PROJECT_DIR$/Hotel/application/models/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hotel/system/helpers/url_helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="-1734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hotel/system/helpers/typography_helper.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hotel/system/helpers/path_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-903" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hotel/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="79" column="21" lean-forward="true" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nabonk-bank/index.php">
+    <entry file="file://$PROJECT_DIR$/Hotel/application/config/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        <state relative-caret-position="-247">
+          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nabonk-bank/koneksiMVC.php">
+    <entry file="file://$PROJECT_DIR$/Hotel/application/config/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hotel/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7965">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hotel/application/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hotel/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nabonk-bank/View/v_register.php">
+    <entry file="file://$PROJECT_DIR$/Hotel/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="87" lean-forward="true" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="87" />
+        <state>
+          <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nabonk-bank/Controller/index.php">
+    <entry file="file://$PROJECT_DIR$/Hotel/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="867">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nabonk-bank/Controller/authentication.php">
+    <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_formPendaftaran.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="96" selection-start-line="23" selection-start-column="96" selection-end-line="23" selection-end-column="96" />
+        <state relative-caret-position="136">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nabonk-bank/Model/m_databaseUser.php">
+    <entry file="file://$PROJECT_DIR$/Hotel/application/views/welcome_message.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hotel/system/database/DB_driver.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="104" lean-forward="true" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
+        <state relative-caret-position="569">
+          <caret line="690" column="29" selection-start-line="690" selection-start-column="29" selection-end-line="690" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_formRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hotel/application/models/m_formOrder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1640">
+          <caret line="105" column="67" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#2;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#3;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#4;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#5;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#6;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#7;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#9;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_orderPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hotel/application/controllers/Hotel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
         </state>
       </provider>
     </entry>
