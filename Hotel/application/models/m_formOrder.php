@@ -34,7 +34,9 @@ class m_formOrder extends CI_Model {
             'contact' => $contact,
             'address' => $address,
         );
+        $this->db->trans_start();
         $this->db->insert('guest',$data);
+        $this->db->trans_complete();
     }
 
     public function registrationOrder($id, $orderPrice, $orderDate, $orderStay, $orderStatus, $room_number, $orderQuota, $nik){
@@ -48,8 +50,10 @@ class m_formOrder extends CI_Model {
             'order_quota' => $orderQuota,
             'nik' =>  $nik
         );
+        $this->db->trans_start();
         $this->db->insert('order',$data);
         $this->reserve($room_number, 1);
+        $this->db->trans_complete();
     }
 
     public function reserve($room_number, $room_status){
