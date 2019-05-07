@@ -40,24 +40,21 @@
 	</div>
 </nav>
 <!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride='carousel'>
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img src="img/background.png" alt="">
-			<div class="carousel-caption">
-				<h3>Thank you for choosing us!</h3>
-        <p>Please complete your order by transferring listed amount to</p>
-        <h2>123456789 a/n Hotel Sekawan</h2>
-        <h1>Rp 500000</h1>
-        <button type="button" name="button" class="btn btn-primary btn-lg">Pay Now</button>
-			</div>
-		</div>
-	</div>
+<hr class="mb-4">
+<div class="container">
+  <div class="mb-3">
+    <label for="address">Address</label>
+    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+    <div class="invalid-feedback">
+      Please enter your shipping address.
+    </div>
+  </div>
 
+  <hr class="mb-4">
+  <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+  <hr class="mb-4">
 </div>
-
-
-
+<hr class="mb-4">
 <!--- Footer -->
 <footer>
 <div class="container-fluid padding">
@@ -93,7 +90,5 @@
 </div>
 </footer>
 
-
-
-</body>
+  </body>
 </html>
