@@ -4,7 +4,14 @@
 class Hotel extends CI_Controller {
 
 
-	public function index(){
+    public function index(){
+        $this->load->helper('url');
+        $this->load->view('v_homePage.php');
+    }
+
+	public function book()
+    {
+        $this->load->helper('url');
         $this->load->model('m_formOrder');
         $data["super"] = $this->m_formOrder->getRoomAvailable('Super');
         $data["hyper"] = $this->m_formOrder->getRoomAvailable('Hyper');
@@ -13,21 +20,24 @@ class Hotel extends CI_Controller {
             $data["roomSuper_price"] = $query->room_price;
             $data["roomSuper_quota"] = $query->room_quota;
             $data["roomSuper_desc"] = $query->room_desc;
+            $data["roomSuper_type"] = $query->room_type;
         }
         foreach ($this->m_formOrder->getRoomData('Hyper') as $query) {
             $data["roomHyper_image"] = $query->image;
             $data["roomHyper_price"] = $query->room_price;
             $data["roomHyper_quota"] = $query->room_quota;
             $data["roomHyper_desc"] = $query->room_desc;
+            $data["roomHyper_type"] = $query->room_type;
         }
 
-        $this->load->view('v_formRoom' , $data);
+        $this->load->view('v_book', $data);
     }
 
     public function orderRoom(){
+        $this->load->helper('url');
         $data["dataRoom"] = $this->input->post('type');
         $data["availableRoom"] = $this->input->post('available');
-        $this->load->view('v_formPendaftaran' , $data);
+        $this->load->view('v_form' , $data);
     }
 
     public function tampilkanOrder(){

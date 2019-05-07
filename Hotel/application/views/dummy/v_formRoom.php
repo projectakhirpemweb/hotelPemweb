@@ -10,7 +10,7 @@
         <form action = "<?php echo base_url('hotel/orderRoom');?>" method = 'post' >
             <input type='hidden' name='type' value='Super'>
             <input type='hidden' name='available' value="<?php echo $super['available'] ?>">
-            <img src="<?php echo $roomSuper_image ?>" alt="Simply Easy Learning" width="400" height="200"> </a>
+            <img src="<?PHP echo base_url().$roomSuper_image;?>" alt="Simply Easy Learning" width="400" height="200"> </a>
             <br>
             Available Room : <?php echo $super['roomSize'] ?> <br>
             Harga : Rp. <?php echo $roomSuper_price ?>/malam <br>
@@ -25,7 +25,7 @@
         <form action= "<?php echo base_url('hotel/orderRoom');?>" method="post">
             <input type='hidden' name='type' value='Hyper'>
             <input type='hidden' name='available' value="<?php echo $hyper['available'] ?>">
-            <img src="<?php echo $roomHyper_image ?>" alt="Simply Easy Learning" width="400" height="200"> </a>
+            <img src="<?PHP echo base_url().$roomHyper_image;?>" alt="Simply Easy Learning" width="400" height="200"> </a>
             <br>
             Available Room : <?php echo $hyper['roomSize'] ?> <br>
             Harga : Rp. <?php echo $roomHyper_price ?>/malam <br>
