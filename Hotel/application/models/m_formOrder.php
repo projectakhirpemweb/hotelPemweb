@@ -10,7 +10,14 @@ class m_formOrder extends CI_Model {
 
     public function getRoomAvailable($type){
         $query = $this->db->get_where('hotelRoom', array('room_type' => $type, 'room_status' => 0 ));
-        return $query->num_rows();
+        $data['available'] = "";
+        foreach ($query->result() as $result) {
+            if ($result->room_status == 0) {
+                $data['available'] .= $result->room_number;
+            }
+        }
+        $data['roomSize'] = $query->num_rows();
+        return $data;
     }
 
     public function getRoomData($type){

@@ -25,7 +25,8 @@ class Hotel extends CI_Controller {
     }
 
     public function orderRoom(){
-        $data["dataRoom"] = $this->input->post('type') ;
+        $data["dataRoom"] = $this->input->post('type');
+        $data["availableRoom"] = $this->input->post('available');
         $this->load->view('v_formPendaftaran' , $data);
     }
 
@@ -38,11 +39,7 @@ class Hotel extends CI_Controller {
     }
 
     public function reserve(){
-	    try {
-	        $this->inputData();
-        } catch (mysqli_sql_exception $ex){
-            $this->index();
-        }
+	    $this->inputData();
     }
 
     function inputData(){
@@ -53,16 +50,18 @@ class Hotel extends CI_Controller {
         $address = $this->input->post('address');
 
         $id = $this->generateNumber();
-        $orderPrice = $this->price($this->input->post('regist'));
-        $orderDate = date("d-m-Y");
-        $orderStay = $this->input->post('stayDays');
+        $orderFirstDate = $this->input->post('firstDate');
+        $orderLastDate = $this->input->post('lastDate');
+        $datediff = strtotime($orderLastDate) - strtotime($orderFirstDate);
+        $orderPrice = $this->weekendPrice($this->input->post('regist'),$orderFirstDate ,round($datediff / (60 * 60 * 24)));
+        $orderPrice += $id;
         $orderQuota = $this->input->post('quota');
         $orderStatus = 0;
         $room_number = $this->input->post('room_number');
 
         $this->load->model('m_formOrder');
         $this->m_formOrder->registrationGuest($name, $nik, $pin, $contact, $address);
-        $this->m_formOrder->registrationOrder($id, $orderPrice, $orderDate, $orderStay, $orderStatus, $room_number, $orderQuota, $nik);
+        $this->m_formOrder->registrationOrder($id, $orderPrice, $orderFirstDate, $orderLastDate, $orderStatus, $room_number, $orderQuota, $nik);
     }
 
     function generateNumber(){
@@ -74,13 +73,38 @@ class Hotel extends CI_Controller {
         return $generate;
     }
 
+    function weekendPrice($post, $firstDate, $days){
+        $finalPrice = 0;
+        $tempPrice = $this->price($post);
+        for ($i = 0; $i<$days ; $i++) {
+            if ($this->checkDay(date('Y-m-d',strtotime($firstDate .("+$i days"))))) {
+                $finalPrice += $tempPrice * (120 / 100);
+            } else {
+                $finalPrice += $tempPrice;
+            }
+        }
+	    return $finalPrice;
+    }
+
     function price($type){
         foreach ($this->m_formOrder->getRoomData($type) as $query) {
             return $query->room_price;
         }
     }
 
-    function generateQRCODE(){
+    function orderPage(){
 
+
+        $this->load->view('v_checkOrder');
     }
+
+    function checkDay($daytime){
+        $timestamp = strtotime($daytime);
+
+        $day = date('l', $timestamp);
+
+        if(strtolower($day) == "friday" || strtolower($day) == "saturday" || strtolower($day) == "sunday") return true;
+        else return false;
+    }
+
 }
