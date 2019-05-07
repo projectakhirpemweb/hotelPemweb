@@ -16,7 +16,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="<?php echo base_url(); ?>/assets/img/logo.png"> </a>
+        <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>/assets/img/logoNew.png"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,11 +29,10 @@
                     <a class="nav-link" href="<?php echo base_url('hotel/book'); ?>">Book</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>	<li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>	<li class="nav-item">
-                    <a class="nav-link" href="#">Check Order</a>
+                    <a class="nav-link" href="<?php echo base_url('hotel/aboutUs'); ?>">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url('hotel/checkOrder'); ?>">Check Order</a>
                 </li>
             </ul>
         </div>
@@ -51,7 +50,7 @@ completing it.</p>
 
   <div class="row">
     <div class="col-md-8 order-md-4">
-      <h4 class="mb-3">Billing address</h4>
+      <h4 class="mb-3"><?php echo $dataRoom; ?> Room</h4>
         <FORM action ="<?php echo base_url('hotel/reserve');?>" method = 'post' name='register' onsubmit="return CheckInput()">
             <INPUT type="hidden" name="regist" value=<?php echo $dataRoom; ?>>
             <div class="row">
@@ -96,12 +95,12 @@ completing it.</p>
             </div>
 
             <div class="mb-3">
-              <label for="address">Alamat</label>
+              <label for="address">Address</label>
               <input type="text" class="form-control" id="address" name="address" autocomplete="off" required>
             </div>
 
             <div class="mb-3">
-              <label for="telephone">Telepon</label>
+              <label for="telephone">Telephone</label>
               <input type="number" class="form-control" id="telephone" name="telephone" autocomplete="off" required="">
               <div class="invalid-feedback">
                 Please enter your telephone.
@@ -167,7 +166,7 @@ completing it.</p>
     <div class="container-fluid padding">
         <div class="row text-center">
             <div class="col-md-4">
-                <img src="<?PHP echo base_url();?>/assets/img/logo.png" alt="">
+                <img src="<?php echo base_url(); ?>/assets/img/logoNew.png" alt="">
                 <hr class="light">
                 <p>085395706447</p>
                 <p>muhammadyusufazari@gmail.com</p>
@@ -178,16 +177,16 @@ completing it.</p>
                 <h5>Our Hotel</h5>
                 <hr class="light">
                 <p>085395706447</p>
-                <p>muhammadyusufazari@gmail.com</p>
-                <p>jl. kertopamuji no.10</p>
+                <p>robertus.dwi.ari.utomo@gmail.com</p>
+                <p>Jl. Sigura-gura V</p>
             </div>
             <div class="col-md-4">
                 <hr class="light">
                 <h5>Our Branch</h5>
                 <hr class="light">
                 <p>085395706447</p>
-                <p>muhammadyusufazari@gmail.com</p>
-                <p>jl. kertopamuji no.10</p>
+                <p>newafgani97@gmail.com</p>
+                <p>Singosari</p>
             </div>
             <div class="col-12">
                 <hr class="light">
@@ -200,6 +199,7 @@ completing it.</p>
 
 
 <SCRIPT>
+
     function CheckInput()
     {
         var pin = document.forms["register"]["pin"].value;
@@ -210,12 +210,13 @@ completing it.</p>
 
         var diff =  Math.floor(( Date.parse(lastDate) - Date.parse(firstDate) ) / 86400000);
 
-        var date,validate,nowDate;
+        var date,validate,nowDate,year;
+
 
         if (diff > 0) {
             date = true;
         } else {
-            alert("Tidak bisa mengambil hari sebelumnya");
+            alert("You can't book previous day");
             date = false;
         }
 
@@ -224,18 +225,18 @@ completing it.</p>
         if (diff >= 0) {
             nowDate = true;
         } else {
-            alert("Tidak bisa mengambil hari sebelumnya");
+            alert("You can't order previous day");
             nowDate = false;
         }
 
         if (pin == confPin) {
             validate = true;
         } else {
-            alert("Mohon perhatikan PIN dan Confirmation PIN, Transaction PIN dan Confirmation Transaction PIN");
+            alert("PIN or Confirmation PIN is invalid");
             validate = false;
         }
 
-        return validate && date && nowDate;
+        return validate && date && nowDate && year;
     }
 
     function CheckDate(){

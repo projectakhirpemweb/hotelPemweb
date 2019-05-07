@@ -17,7 +17,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="<?php echo base_url(); ?>/assets/img/logo.png"> </a>
+        <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>/assets/img/logoNew.png"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,9 +49,9 @@
 					<div class="card-body">
 						<h4 class="card-title"><?PHP echo $roomSuper_type;?></h4>
                         <p>Available Room : <?php echo $super['roomSize'] ?>  </p>
-                        <p>Harga     : Rp.<?PHP echo $roomSuper_price;?></p>
+                        <p>Price     : Rp.<?PHP echo $roomSuper_price;?></p>
                         <p>Quota     : <?PHP echo $roomSuper_quota;?> orang</p>
-                        <p>Fasilitas : <?PHP echo $roomSuper_desc;?></p>
+                        <p>Facility : <?PHP echo $roomSuper_desc;?></p>
                         <form action= "<?php echo base_url('hotel/orderRoom');?>" method="post">
                             <input type='hidden' name='type' value='Super'>
                             <input type='hidden' name='available' value="<?php echo $super['available'] ?>">
@@ -62,13 +62,13 @@
             </div>
             <div class="col-md-6">
                 <div class="card">
-                    <img class="card-img-top" src="<?PHP echo base_url().$roomSuper_image;?>">
+                    <img class="card-img-top" src="<?PHP echo base_url().$roomHyper_image;?>">
                     <div class="card-body">
                         <h4 class="card-title"><?PHP echo $roomHyper_type;?></h4>
                         <p>Available Room : <?php echo $hyper['roomSize'] ?>  </p>
-                        <p>Harga     : Rp.<?PHP echo $roomHyper_price;?></p>
+                        <p>Price     : Rp.<?PHP echo $roomHyper_price;?></p>
                         <p>Quota     : <?PHP echo $roomHyper_quota;?> orang</p>
-                        <p>Fasilitas : <?PHP echo $roomHyper_desc;?></p>
+                        <p>Facility : <?PHP echo $roomHyper_desc;?></p>
                         <form action= "<?php echo base_url('hotel/orderRoom');?>" method="post">
                             <input type='hidden' name='type' value='Hyper'>
                             <input type='hidden' name='available' value="<?php echo $hyper['available'] ?>">
@@ -81,37 +81,37 @@
 </div>
 <!--- Footer -->
 <footer>
-<div class="container-fluid padding">
-	<div class="row text-center">
-		<div class="col-md-4">
-			<img src="<?PHP echo base_url();?>/assets/img/logo.png" alt="">
-			<hr class="light">
-			<p>085395706447</p>
-			<p>muhammadyusufazari@gmail.com</p>
-			<p>jl. kertopamuji no.10</p>
-		</div>
-		<div class="col-md-4">
-			<hr class="light">
-			<h5>Our Hotel</h5>
-			<hr class="light">
-			<p>085395706447</p>
-			<p>muhammadyusufazari@gmail.com</p>
-			<p>jl. kertopamuji no.10</p>
-	</div>
-	<div class="col-md-4">
-		<hr class="light">
-		<h5>Our Branch</h5>
-		<hr class="light">
-		<p>085395706447</p>
-		<p>muhammadyusufazari@gmail.com</p>
-		<p>jl. kertopamuji no.10</p>
-</div>
-<div class="col-12">
-	<hr class="light">
-	<h5>Hotel Sekawan</h5>
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="<?php echo base_url(); ?>/assets/img/logoNew.png" alt="">
+                <hr class="light">
+                <p>085395706447</p>
+                <p>muhammadyusufazari@gmail.com</p>
+                <p>jl. kertopamuji no.10</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Our Hotel</h5>
+                <hr class="light">
+                <p>085395706447</p>
+                <p>robertus.dwi.ari.utomo@gmail.com</p>
+                <p>Jl. Sigura-gura V</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Our Branch</h5>
+                <hr class="light">
+                <p>085395706447</p>
+                <p>newafgani97@gmail.com</p>
+                <p>Singosari</p>
+            </div>
+            <div class="col-12">
+                <hr class="light">
+                <h5>Hotel Sekawan</h5>
 
-</div>
-</div>
+            </div>
+        </div>
 </footer>
 
 

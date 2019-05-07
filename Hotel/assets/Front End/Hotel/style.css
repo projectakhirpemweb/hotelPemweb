@@ -6,6 +6,17 @@ html,body{
   font-family: 'Poppins', sans-serif;
   color: #222;
 }
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
 .navbar{
 padding: .8rem;
 }
@@ -65,7 +76,7 @@ padding: .8rem;
 
 .social a{
   font-size: 4.5em;
-  padding: 3;
+  padding: 3rem;
 }
 
 footer{
@@ -130,7 +141,7 @@ hr.light-100 {
     font-size: 110%;
 
   }
-  }
+
 }
 
 

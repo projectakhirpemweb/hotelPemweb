@@ -17,7 +17,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="../Hotel/assets/img/logo.png"> </a>
+        <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>/assets/img/logoNew.png"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,17 +48,17 @@
     </ul>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="../Hotel/assets/img/background.png" alt="">
+            <img src="../Hotel/assets/img/backgroundNew.jpg" alt="">
             <div class="carousel-caption">
                 <h1>Hotel Sekawan </h1>
                 <h3>The only place you will never visit again</h3>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="../Hotel/assets/img/background2.png" alt="">
+            <img src="../Hotel/assets/img/backgroundNew2.jpg" alt="">
         </div>
         <div class="carousel-item">
-            <img src="../Hotel/assets/img/background3.png" alt="">
+            <img src="../Hotel/assets/img/backgroundNew3.jpg" alt="">
         </div>
     </div>
 
@@ -105,10 +105,8 @@
 <div class="container-fluid padding">
     <div class="row padding">
         <div class="col-md-12 col-lg-6">
-            <h2>Your Happiness is our priority </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>loremasasasasasasasasasasasasasasasasasasasasasasasasasas</p>
-            <p>loremasasasaxsdefefesfsczcczszczdczdzczdzsczc</p>
+            <h2> Why Must Sekawan Hotel? </h2>
+            <p>Sekawan Hotel offers a urban vibe, artful style, and warm hospitality. Our hotel offers everything you need – beautifully modern rooms and suites, luxury lifestyle and stellar service. It all starts the moment you walk in, when you're greeted with a welcome beverage from our exceptional staff.</p>
         </div>
         <div class="col-lg-6">
             <img src="../Hotel/assets/img/desk.png" class="img-fluid">
@@ -138,8 +136,8 @@
             <div class="card">
                 <img class="card-img-top" src="../Hotel/assets/img/team1.png">
                 <div class="card-body">
-                    <h4 class="card-title">Arata Toire</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h4 class="card-title">Robertus Dwi Ari Utomo</h4>
+                    <p>Excelent, what a great hotel. Such a wonderful place to stay during your trip. My kids really love this place. Comfortable rooms, superb service, and beautiful scenery we have from the balcony. Great design and  theme. Cant wait to come here again</p>
                 </div>
             </div>
         </div>
@@ -147,8 +145,8 @@
             <div class="card">
                 <img class="card-img-top" src="../Hotel/assets/img/team2.png">
                 <div class="card-body">
-                    <h4 class="card-title">Azari Aku</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h4 class="card-title">Muhammad Yusuf Azari</h4>
+                    <p>Great view and beautiful room. The service is beyond my expectation, and all of the staff is really friendly. Always love all the facilities, such a beautiful pool, and cheap restaurant and coffee shop price. Best place to relax and rest in my holiday.</p>
                 </div>
             </div>
         </div>
@@ -156,8 +154,8 @@
             <div class="card">
                 <img class="card-img-top" src="../Hotel/assets/img/team3.png">
                 <div class="card-body">
-                    <h4 class="card-title">Avajar</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h4 class="card-title">Afgani Fajar Rizky</h4>
+                    <p>Great view and beautiful room. The service is beyond my expectation, and all of the staff is really friendly. Always love all the facilities, such a beautiful pool, and cheap restaurant and coffee shop price. Best place to relax and rest in my holiday.</p>
                 </div>
             </div>
         </div>
@@ -170,9 +168,7 @@
     <div class="row padding">
         <div class="col-md-12 col-lg-6">
             <h2>Your Happiness is our priority </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>loremasasasasasasasasasasasasasasasasasasasasasasasasasas</p>
-            <p>loremasasasaxsdefefesfsczcczszczdczdzczdzsczc</p>
+            <p>What we prioritize here is your happiness. We know that what you want is a valuable experience that is not easily forgotten. With a variety of promising facilities and services. Hotel Sekawan is ready to accompany you to bring happiness in your relaxing experience</p>
 
         </div>
         <div class="col-lg-6">
@@ -204,7 +200,7 @@
     <div class="container-fluid padding">
         <div class="row text-center">
             <div class="col-md-4">
-                <img src="../Hotel/assets/img/logo.png" alt="">
+                <img src="<?php echo base_url(); ?>/assets/img/logoNew.png" alt="">
                 <hr class="light">
                 <p>085395706447</p>
                 <p>muhammadyusufazari@gmail.com</p>
@@ -215,16 +211,16 @@
                 <h5>Our Hotel</h5>
                 <hr class="light">
                 <p>085395706447</p>
-                <p>muhammadyusufazari@gmail.com</p>
-                <p>jl. kertopamuji no.10</p>
+                <p>robertus.dwi.ari.utomo@gmail.com</p>
+                <p>Jl. Sigura-gura V</p>
             </div>
             <div class="col-md-4">
                 <hr class="light">
                 <h5>Our Branch</h5>
                 <hr class="light">
                 <p>085395706447</p>
-                <p>muhammadyusufazari@gmail.com</p>
-                <p>jl. kertopamuji no.10</p>
+                <p>newafgani97@gmail.com</p>
+                <p>Singosari</p>
             </div>
             <div class="col-12">
                 <hr class="light">

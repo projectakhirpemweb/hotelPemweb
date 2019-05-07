@@ -13,11 +13,10 @@
 </head>
 <body>
 
-
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="<?php echo base_url(); ?>/assets/img/logo.png"> </a>
+        <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>/assets/img/logoNew.png"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,9 +46,12 @@
             <div class="carousel-caption">
                 <h3>Thank you for choosing us!</h3>
                 <p>Please complete your order by transferring listed amount to</p>
-                <h2>123456789 a/n Hotel Sekawan</h2>
+                <h2>1751852736 a/n Hotel Sekawan</h2>
                 <h1>Rp <?php echo $price ?></h1>
-                <button type="button" name="button" class="btn btn-primary btn-lg">Pay Now</button>
+                <form action="<?php echo base_url('nabonkBank/bank'); ?>" method="post" >
+                    <input type="hidden" name="rek" value="1751852736">
+                    <input type="submit" name="pay" class="btn btn-primary btn-lg" value="Pay Now">
+                </form>
             </div>
         </div>
     </div>
@@ -63,7 +65,7 @@
     <div class="container-fluid padding">
         <div class="row text-center">
             <div class="col-md-4">
-                <img src="<?php echo base_url(); ?>/assets/img/logo.png" alt="">
+                <img src="<?php echo base_url(); ?>/assets/img/logoNew.png" alt="">
                 <hr class="light">
                 <p>085395706447</p>
                 <p>muhammadyusufazari@gmail.com</p>
@@ -74,16 +76,16 @@
                 <h5>Our Hotel</h5>
                 <hr class="light">
                 <p>085395706447</p>
-                <p>muhammadyusufazari@gmail.com</p>
-                <p>jl. kertopamuji no.10</p>
+                <p>robertus.dwi.ari.utomo@gmail.com</p>
+                <p>Jl. Sigura-gura V</p>
             </div>
             <div class="col-md-4">
                 <hr class="light">
                 <h5>Our Branch</h5>
                 <hr class="light">
                 <p>085395706447</p>
-                <p>muhammadyusufazari@gmail.com</p>
-                <p>jl. kertopamuji no.10</p>
+                <p>newafgani97@gmail.com</p>
+                <p>Singosari</p>
             </div>
             <div class="col-12">
                 <hr class="light">

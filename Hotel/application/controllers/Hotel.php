@@ -14,9 +14,9 @@ class Hotel extends CI_Controller {
         $this->load->model('m_login');
         if($this->m_login->login($this->input->post('nik'), $this->input->post('pin'))==TRUE){
             echo "<script>  
-		 			window.location.href='".base_url()."';
 		 			alert('Login Success!');
                  </script>";
+            $this->tampilkanOrder();
         }else{
             echo "<script>
                     window.location.href='".base_url('hotel/checkOrder')."';
@@ -61,7 +61,7 @@ class Hotel extends CI_Controller {
         $this->load->model('m_formOrder');
 
         $data["order"] = $this->m_formOrder->getOrder($id);
-        $this->load->view('v_orderPage' , $data);
+        $this->load->view('status' , $data);
     }
 
     public function checkOrder(){
@@ -145,8 +145,5 @@ class Hotel extends CI_Controller {
         $this->load->view('v_aboutus');
     }
 
-    function transfer(){
-
-    }
 
 }
