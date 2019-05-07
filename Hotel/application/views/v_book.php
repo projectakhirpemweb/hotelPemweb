@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<title>Hotel Sekawan</title>
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-      <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
-  </head>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotel Sekawan </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
+</head>
+<body>
+
+
 <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-    	<div class="container-fluid">
-    		<a class="navbar-brand" href="#"><img src="<?PHP echo base_url();?>/assets/img/logo.png"> </a>
-    		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-    			<span class="navbar-toggler-icon"></span>
-    		</button>
-    		<div class="collapse navbar-collapse" id="navbarResponsive">
-    			<ul class="navbar-nav ml-auto">
-    				<li class="nav-item active">
-    					<a class="nav-link" href="<?php echo base_url(); ?>">Home</a>
-    				</li>
-    				<li class="nav-item">
-    					<a class="nav-link" href="#">Book</a>
-    				</li>
-    				<li class="nav-item">
-    					<a class="nav-link" href="#">About</a>
-    				</li>	<li class="nav-item">
-    					<a class="nav-link" href="#">Contact Us</a>
-    				</li>	<li class="nav-item">
-    					<a class="nav-link" href="#">Check Order</a>
-    				</li>
-    			</ul>
-    		</div>
-    	</div>
-    </nav>
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../Hotel/assets/img/logo.png"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="<?php echo base_url(); ?>">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url('hotel/book'); ?>">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url('hotel/aboutUs'); ?>">Contact Us</a>
+                </li>	<li class="nav-item">
+                    <a class="nav-link" href="#">Check Order</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <!-- Room -->
 <div class="container-fluid padding">
@@ -54,7 +54,7 @@
                         <form action= "<?php echo base_url('hotel/orderRoom');?>" method="post">
                             <input type='hidden' name='type' value='Super'>
                             <input type='hidden' name='available' value="<?php echo $super['available'] ?>">
-                            <input class="btn btn-primary btn-lg" type = 'submit' <?php echo $super == 0 ? "value='Room Full' disabled" : "value='Book'" ?>>
+                            <input class="btn btn-primary btn-lg" type = 'submit' <?php echo $super['roomSize'] == 0 ? "value='Room Full' disabled" : "value='Book'" ?>>
                         </form>
 					</div>
                 </div>
@@ -71,7 +71,7 @@
                         <form action= "<?php echo base_url('hotel/orderRoom');?>" method="post">
                             <input type='hidden' name='type' value='Hyper'>
                             <input type='hidden' name='available' value="<?php echo $hyper['available'] ?>">
-                            <input class="btn btn-primary btn-lg" type = 'submit' <?php echo $hyper == 0 ? "value='Room Full' disabled" : "value='Book'" ?>>
+                            <input class="btn btn-primary btn-lg" type = 'submit' <?php echo $hyper['roomSize'] == 0 ? "value='Room Full' disabled" : "value='Book'" ?>>
                         </form>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
 		<p>muhammadyusufazari@gmail.com</p>
 		<p>jl. kertopamuji no.10</p>
 </div>
-<div class="ol-12">
+<div class="col-12">
 	<hr class="light">
 	<h5>Hotel Sekawan</h5>
 

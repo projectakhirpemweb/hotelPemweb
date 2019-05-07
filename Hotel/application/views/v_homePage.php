@@ -24,15 +24,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="<?php echo base_url(); ?>">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url('hotel/book'); ?>">Book</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>	<li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="<?php echo base_url('hotel/aboutUs'); ?>">Contact Us</a>
                 </li>	<li class="nav-item">
                     <a class="nav-link" href="#">Check Order</a>
                 </li>
@@ -227,7 +225,7 @@
                 <p>muhammadyusufazari@gmail.com</p>
                 <p>jl. kertopamuji no.10</p>
             </div>
-            <div class="ol-12">
+            <div class="col-12">
                 <hr class="light">
                 <h5>Hotel Sekawan</h5>
 

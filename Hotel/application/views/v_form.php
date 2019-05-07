@@ -15,29 +15,29 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="#"><img src="<?PHP echo base_url();?>/assets/img/logo.png"> </a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Book</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
-				</li>	<li class="nav-item">
-					<a class="nav-link" href="#">Contact Us</a>
-				</li>	<li class="nav-item">
-					<a class="nav-link" href="#">Check Order</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../Hotel/assets/img/logo.png"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="<?php echo base_url(); ?>">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url('hotel/book'); ?>">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>	<li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>	<li class="nav-item">
+                    <a class="nav-link" href="#">Check Order</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
     <!---checkout--->
     <div class="container">
@@ -52,89 +52,111 @@ completing it.</p>
   <div class="row">
     <div class="col-md-8 order-md-4">
       <h4 class="mb-3">Billing address</h4>
-      <form class="needs-validation" novalidate="">
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="firstName">First name</label>
-            <input type="text" class="form-control" id="firstName" placeholder="" required="">
-            <div class="invalid-feedback">
-              Valid first name is required.
+        <FORM action ="<?php echo base_url('hotel/reserve');?>" method = 'post' name='register' onsubmit="return CheckInput()">
+            <INPUT type="hidden" name="regist" value=<?php echo $dataRoom; ?>>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="firstName" name="f-name" autocomplete="off" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" id="lastName" name="l-name" autocomplete="off" required="">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="lastName">Last name</label>
-            <input type="text" class="form-control" id="lastName" placeholder="" required="">
-            <div class="invalid-feedback">
-              Valid last name is required.
+
+            <div class="mb-3">
+              <label for="nik">NIK</label>
+              <input type="number" class="form-control" id="nik" name="nik" autocomplete="off" required >
+              <div class="invalid-feedback">
+                Please enter a valid NIK.
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="mb-3">
-          <label for="email">NIK</label>
-          <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          <div class="invalid-feedback">
-            Please enter a valid email address for shipping updates.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="email">PIN</label>
-          <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          <div class="invalid-feedback">
-            Please enter a valid email address for shipping updates.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="address">PIN confirmation</label>
-          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
-          <div class="invalid-feedback">
-            Please enter your shipping address.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="address2">Alamat</label>
-          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-        </div>
-
-        <div class="mb-3">
-          <label for="address">Telepon</label>
-          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
-          <div class="invalid-feedback">
-            Please enter your shipping address.
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-5 mb-3">
-            <label for="country">Country</label>
-            <select class="custom-select d-block w-100" id="country" required="">
-              <option value="" selected="selected">Choose...</option>
-              <option>United States</option>
-            </select>
-            <div class="invalid-feedback">
-              Please select a valid country.
+            <div class="mb-3">
+              <label for="email">PIN</label>
+              <input type="password" class="form-control" id="email" name="pin" autocomplete="off" required>
+              <div class="invalid-feedback">
+                Please enter a valid PIN.
+              </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="state">State</label>
-            <select class="custom-select d-block w-100" id="state" required="">
-              <option value="" selected="selected">Choose...</option>
-              <option>California</option>
-            </select>
-            <div class="invalid-feedback">
-              Please provide a valid state.
+
+            <div class="mb-3">
+              <label for="conf-pin">PIN confirmation</label>
+              <input type="password" class="form-control" id="conf-pin" name="conf-pin" autocomplete="off" required="">
+              <div class="invalid-feedback">
+                Please enter your PIN.
+              </div>
             </div>
-          </div>
-        </div>
 
+            <div class="mb-3">
+              <label for="address">Alamat</label>
+              <input type="text" class="form-control" id="address" name="address" autocomplete="off" required>
+            </div>
 
+            <div class="mb-3">
+              <label for="telephone">Telepon</label>
+              <input type="number" class="form-control" id="telephone" name="telephone" autocomplete="off" required="">
+              <div class="invalid-feedback">
+                Please enter your telephone.
+              </div>
+            </div>
 
+              <div class="row">
+                  <div class="col-md-5 mb-3">
+                      <label for="firstOrder">First Order</label>
+                      <INPUT type='date' class="custom-select d-block w-100" id="firstOrder" name="firstDate" autocomplete="off" required>
+                      <div class="invalid-feedback">
+                          Please select a valid date.
+                      </div>
+                  </div>
+                  <div class="col-md-5 mb-3">
+                      <label for="lastOrder">Last Stay</label>
+                      <INPUT type='date' class="custom-select d-block w-100" id="lastOrder" name="lastDate" autocomplete="off" required>
+                      <div class="invalid-feedback">
+                          Please provide a valid date.
+                      </div>
+                  </div>
+              </div>
 
-        <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                  <label for="roomNumber">Room Number</label>
+                  <select class="custom-select d-block w-100" id="roomNumber" name="room_number" autocomplete="off" required="">
+                    <option value="" selected="selected">Choose...</option>
+                    <?php
+                    for ($i = 1; $i<=5 ;$i++) {
+                        if(strpos($availableRoom,"$i") !== false) echo "<option value='".$i."'> $i </option>";
+                    }
+                    ?>
+                  </select>
+                <div class="invalid-feedback">
+                  Please select a valid room number.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="roomQuota">Room Quota</label>
+                <select class="custom-select d-block w-100" id="roomQuota" name="quota" autocomplete="off" required="">
+                    <option value="" selected="selected">Choose...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid input.
+                </div>
+              </div>
+            </div>
+
+            <hr class="mb-4">
+            <input class="btn btn-primary btn-lg btn-block" type="submit" value="Continue to checkout" name="Register"></input>
+            <hr class="mb-4">
       </form>
     </div>
   </div>
@@ -167,7 +189,7 @@ completing it.</p>
                 <p>muhammadyusufazari@gmail.com</p>
                 <p>jl. kertopamuji no.10</p>
             </div>
-            <div class="ol-12">
+            <div class="col-12">
                 <hr class="light">
                 <h5>Hotel Sekawan</h5>
 
@@ -177,6 +199,54 @@ completing it.</p>
 
 
 
+<SCRIPT>
+    function CheckInput()
+    {
+        var pin = document.forms["register"]["pin"].value;
+        var confPin = document.forms["register"]["conf-pin"].value;
+
+        var firstDate = document.forms["register"]["firstDate"].value;
+        var lastDate = document.forms["register"]["lastDate"].value;
+
+        var diff =  Math.floor(( Date.parse(lastDate) - Date.parse(firstDate) ) / 86400000);
+
+        var date,validate,nowDate;
+
+        if (diff > 0) {
+            date = true;
+        } else {
+            alert("Tidak bisa mengambil hari sebelumnya");
+            date = false;
+        }
+
+        diff =  Math.floor(( Date.parse(firstDate) - Date.parse(CheckDate()) ) / 86400000);
+
+        if (diff >= 0) {
+            nowDate = true;
+        } else {
+            alert("Tidak bisa mengambil hari sebelumnya");
+            nowDate = false;
+        }
+
+        if (pin == confPin) {
+            validate = true;
+        } else {
+            alert("Mohon perhatikan PIN dan Confirmation PIN, Transaction PIN dan Confirmation Transaction PIN");
+            validate = false;
+        }
+
+        return validate && date && nowDate;
+    }
+
+    function CheckDate(){
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+
+        return yyyy + '/' + mm + '/' + dd;
+    }
+</SCRIPT>
 </body></html>
 
 

@@ -50,6 +50,7 @@ class Hotel extends CI_Controller {
 
     public function reserve(){
 	    $this->inputData();
+        $this->load->view('v_checkout');
     }
 
     function inputData(){
@@ -115,6 +116,11 @@ class Hotel extends CI_Controller {
 
         if(strtolower($day) == "friday" || strtolower($day) == "saturday" || strtolower($day) == "sunday") return true;
         else return false;
+    }
+
+    public function aboutUs(){
+        $this->load->helper('url');
+        $this->load->view('v_aboutus');
     }
 
     function transfer(){
