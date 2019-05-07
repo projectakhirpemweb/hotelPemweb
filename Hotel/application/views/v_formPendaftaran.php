@@ -8,25 +8,34 @@
 <H3> <?php echo $dataRoom; ?> </H3>
 <FORM action ="<?php echo base_url('hotel/reserve');?>" method = 'post' name='register' onsubmit="return CheckInput()">
     <INPUT type="hidden" name="regist" value=<?php echo $dataRoom; ?>>
-    Front Name <INPUT type = 'text' placeholder="Mr. Robertus" name="f-name" required >
+    Front Name <INPUT type = 'text' name="f-name" autocomplete="off"  required >
     <BR>
-    Last Name <INPUT type = 'text' placeholder="Ari" name="l-name" required>
+    Last Name <INPUT type = 'text' name="l-name" autocomplete="off"  required>
     <BR>
-    NIK <INPUT type = 'number' placeholder="351411******" name="nik" required>
+    NIK <INPUT type = 'number' name="nik" autocomplete="off"  required>
     <BR>
-    PIN <INPUT type = 'password' placeholder="******" name="pin" required>
+    PIN <INPUT type = 'password' name="pin" autocomplete="off"  required>
     <BR>
-    Confirmation PIN <INPUT type = 'password' placeholder="******" name="conf-pin" required>
+    Confirmation PIN <INPUT type = 'password' name="conf-pin" autocomplete="off"  required>
     <BR>
-    Alamat <INPUT type = 'text' placeholder="Jl. Watugong" name="address" required>
+    Alamat <INPUT type = 'text'  name="address" autocomplete="off"  required>
     <BR>
-    Telephone <INPUT type = 'number' placeholder="082254923023" name="telephone" required>
+    Telephone <INPUT type = 'number' name="telephone" autocomplete="off"  required>
     <BR>
-    Nomor Kamar <INPUT type = 'number' placeholder="3" name="room_number" required>
+    Nomor Kamar <input list="room" name="room_number" autocomplete="off" required>
+    <datalist id="room">
+        <?php
+            for ($i = 1; $i<=5 ;$i++) {
+                if(strpos($availableRoom,"$i") !== false) echo "<option value='".$i."'>";
+            }
+        ?>
+    </datalist>
     <BR>
-    Lama Menginap <INPUT type = 'number' placeholder="3" name="stayDays" required>
+    Tanggal Pesan <INPUT type = 'date' name="firstDate" autocomplete="off"  required>
     <BR>
-    Jumlah Orang <INPUT type = 'number' placeholder="4" name="quota" required>
+    Tanggal Selesai <INPUT type = 'date' name="lastDate" autocomplete="off"  required>
+    <BR>
+    Jumlah Orang <INPUT type = 'number' name="quota" autocomplete="off"  required>
     <BR>
 
     <INPUT type="submit" value="Register">
@@ -38,12 +47,46 @@
         var pin = document.forms["register"]["pin"].value;
         var confPin = document.forms["register"]["conf-pin"].value;
 
+        var firstDate = document.forms["register"]["firstDate"].value;
+        var lastDate = document.forms["register"]["lastDate"].value;
+
+        var diff =  Math.floor(( Date.parse(lastDate) - Date.parse(firstDate) ) / 86400000);
+
+        var date,validate,nowDate;
+
+        if (diff > 0) {
+            date = true;
+        } else {
+            alert("Tidak bisa mengambil hari sebelumnya");
+            date = false;
+        }
+
+        diff =  Math.floor(( Date.parse(firstDate) - Date.parse(CheckDate()) ) / 86400000);
+
+        if (diff >= 0) {
+            date = true;
+        } else {
+            alert("Tidak bisa mengambil hari sebelumnya");
+            date = false;
+        }
+
         if (pin == confPin) {
-            return true;
+            validate = true;
         } else {
             alert("Mohon perhatikan PIN dan Confirmation PIN, Transaction PIN dan Confirmation Transaction PIN");
-            return false;
+            validate = false;
         }
+
+        return validate && date;
+    }
+
+    function CheckDate(){
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+
+        return yyyy + '/' + mm + '/' + dd;
     }
 </SCRIPT>
 </BODY>
