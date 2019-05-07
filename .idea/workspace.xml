@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b24a7de2-584b-4d5e-97c7-bf04ee3086b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Hotel/application/views/v_aboutus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel/application/views/v_checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel/application/controllers/Hotel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel/application/controllers/Hotel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel/application/models/m_formOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel/application/models/m_formOrder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel/application/views/v_aboutus.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel/application/views/v_aboutus.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hotel/application/views/v_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel/application/views/v_book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel/application/views/v_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel/application/views/v_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel/application/views/v_checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel/application/views/v_checkout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hotel/application/views/v_homePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel/application/views/v_homePage.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_aboutus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" selection-end-line="39" selection-end-column="6" />
+            <state relative-caret-position="493">
+              <caret line="32" column="93" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -55,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_homePage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+            <state relative-caret-position="450">
+              <caret line="32" column="93" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -64,17 +60,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_book.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="5" selection-start-line="5" selection-end-line="39" selection-end-column="6" />
+            <state relative-caret-position="450">
+              <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_checkout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="5" selection-start-line="5" selection-end-line="39" selection-end-column="6" />
+            <state relative-caret-position="450">
+              <caret line="32" column="93" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -132,10 +128,10 @@
         <option value="$PROJECT_DIR$/Hotel/application/views/v_form.php" />
         <option value="$PROJECT_DIR$/Hotel/application/models/m_formOrder.php" />
         <option value="$PROJECT_DIR$/Hotel/application/controllers/Hotel.php" />
-        <option value="$PROJECT_DIR$/Hotel/application/views/v_aboutus.php" />
-        <option value="$PROJECT_DIR$/Hotel/application/views/v_homePage.php" />
-        <option value="$PROJECT_DIR$/Hotel/application/views/v_book.php" />
         <option value="$PROJECT_DIR$/Hotel/application/views/v_checkout.php" />
+        <option value="$PROJECT_DIR$/Hotel/application/views/v_book.php" />
+        <option value="$PROJECT_DIR$/Hotel/application/views/v_homePage.php" />
+        <option value="$PROJECT_DIR$/Hotel/application/views/v_aboutus.php" />
       </list>
     </option>
   </component>
@@ -250,12 +246,12 @@
       <workItem from="1556950638819" duration="7325000" />
       <workItem from="1556963923850" duration="629000" />
       <workItem from="1557145627951" duration="10221000" />
-      <workItem from="1557214805842" duration="19864000" />
+      <workItem from="1557214805842" duration="20003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63742000" />
+    <option name="totallyTimeSpent" value="63881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="2" width="1320" height="784" extended-state="0" />
@@ -451,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_aboutus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hotel/application/controllers/Hotel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
@@ -465,24 +454,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_homePage.php">
+    <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_checkout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+        <state relative-caret-position="450">
+          <caret line="32" column="93" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_book.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="5" selection-start-line="5" selection-end-line="39" selection-end-column="6" />
+        <state relative-caret-position="450">
+          <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_checkout.php">
+    <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_homePage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="5" selection-start-line="5" selection-end-line="39" selection-end-column="6" />
+        <state relative-caret-position="450">
+          <caret line="32" column="93" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hotel/application/views/v_aboutus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" column="93" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="93" />
         </state>
       </provider>
     </entry>

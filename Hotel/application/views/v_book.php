@@ -30,7 +30,7 @@
                     <a class="nav-link" href="<?php echo base_url('hotel/book'); ?>">Book</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('hotel/aboutUs'); ?>">Contact Us</a>
+                    <a class="nav-link" href="<?php echo base_url('hotel/aboutUs'); ?>">About Us</a>
                 </li>	<li class="nav-item">
                     <a class="nav-link" href="#">Check Order</a>
                 </li>
