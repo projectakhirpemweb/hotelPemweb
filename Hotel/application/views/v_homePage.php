@@ -31,8 +31,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url('hotel/aboutUs'); ?>">About Us</a>
-                </li>	<li class="nav-item">
-                    <a class="nav-link" href="#">Check Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url('hotel/checkOrder'); ?>">Check Order</a>
                 </li>
             </ul>
         </div>

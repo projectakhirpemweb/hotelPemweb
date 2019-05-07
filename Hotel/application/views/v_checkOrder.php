@@ -40,24 +40,30 @@
     </div>
 </nav>
 <!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride='carousel'>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="<?php echo base_url(); ?>/assets/img/background.png" alt="">
-            <div class="carousel-caption">
-                <h3>Thank you for choosing us!</h3>
-                <p>Please complete your order by transferring listed amount to</p>
-                <h2>123456789 a/n Hotel Sekawan</h2>
-                <h1>Rp <?php echo $price ?></h1>
-                <button type="button" name="button" class="btn btn-primary btn-lg">Pay Now</button>
+<hr class="mb-4">
+<div class="container">
+    <form action="<?php echo base_url('hotel/do_login'); ?>" method="post">
+        <div class="mb-3">
+            <label for="address">NIK</label>
+            <input type="number" class="form-control" id="nik" name='nik' autocomplete="off" required="">
+            <div class="invalid-feedback">
+                Please enter your NIK.
             </div>
         </div>
-    </div>
+        <div class="mb-3">
+            <label for="pin">PIN</label>
+            <input type="password" class="form-control" id="pin" name = "pin" autocomplete="off" required="">
+            <div class="invalid-feedback">
+                Please enter your PIN.
+            </div>
+        </div>
 
+        <hr class="mb-4">
+        <input class="btn btn-primary btn-lg btn-block" type="submit" value="Continue to checkout">
+        <hr class="mb-4">
+    </form>
 </div>
-
-
-
+<hr class="mb-4">
 <!--- Footer -->
 <footer>
     <div class="container-fluid padding">
@@ -93,5 +99,5 @@
         </div>
 </footer>
 
-
-
+</body>
+</html>

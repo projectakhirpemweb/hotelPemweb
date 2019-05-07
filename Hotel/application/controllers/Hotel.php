@@ -9,6 +9,22 @@ class Hotel extends CI_Controller {
         $this->load->view('v_homePage.php');
     }
 
+    public function do_login()
+    {
+        $this->load->model('m_login');
+        if($this->m_login->login($this->input->post('nik'), $this->input->post('pin'))==TRUE){
+            echo "<script>  
+		 			window.location.href='".base_url()."';
+		 			alert('Login Success!');
+                 </script>";
+        }else{
+            echo "<script>
+                    window.location.href='".base_url('hotel/checkOrder')."';
+                    alert('Login Failed, Wrong Username or Password');
+                 </script>";
+        }
+    }
+
 	public function book()
     {
         $this->load->helper('url');
@@ -48,9 +64,13 @@ class Hotel extends CI_Controller {
         $this->load->view('v_orderPage' , $data);
     }
 
+    public function checkOrder(){
+        $this->load->helper('url');
+        $this->load->view('v_checkOrder');
+    }
+
     public function reserve(){
 	    $this->inputData();
-        $this->load->view('v_checkout');
     }
 
     function inputData(){
@@ -71,8 +91,10 @@ class Hotel extends CI_Controller {
         $room_number = $this->input->post('room_number');
 
         $this->load->model('m_formOrder');
+        $data["price"] = number_format($orderPrice,2,",",".");;
         $this->m_formOrder->registrationGuest($name, $nik, $pin, $contact, $address);
         $this->m_formOrder->registrationOrder($id, $orderPrice, $orderFirstDate, $orderLastDate, $orderStatus, $room_number, $orderQuota, $nik);
+        $this->load->view('v_checkout',$data);
     }
 
     function generateNumber(){

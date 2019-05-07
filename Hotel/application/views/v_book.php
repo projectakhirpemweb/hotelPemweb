@@ -17,7 +17,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="../Hotel/assets/img/logo.png"> </a>
+        <a class="navbar-brand" href="#"><img src="<?php echo base_url(); ?>/assets/img/logo.png"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,8 +31,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url('hotel/aboutUs'); ?>">About Us</a>
-                </li>	<li class="nav-item">
-                    <a class="nav-link" href="#">Check Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url('hotel/checkOrder'); ?>">Check Order</a>
                 </li>
             </ul>
         </div>
