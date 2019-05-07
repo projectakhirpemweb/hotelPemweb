@@ -54,7 +54,7 @@
                         <form action= "<?php echo base_url('hotel/orderRoom');?>" method="post">
                             <input type='hidden' name='type' value='Super'>
                             <input type='hidden' name='available' value="<?php echo $super['available'] ?>">
-                            <input class="btn btn-primary btn-lg" type = 'submit' <?php echo $super == 0 ? "value='Room Full' disabled" : "value='Book'" ?>>
+                            <input class="btn btn-primary btn-lg" type = 'submit' <?php echo $super['roomSize'] == 0 ? "value='Room Full' disabled" : "value='Book'" ?>>
                         </form>
 					</div>
                 </div>
@@ -71,7 +71,7 @@
                         <form action= "<?php echo base_url('hotel/orderRoom');?>" method="post">
                             <input type='hidden' name='type' value='Hyper'>
                             <input type='hidden' name='available' value="<?php echo $hyper['available'] ?>">
-                            <input class="btn btn-primary btn-lg" type = 'submit' <?php echo $hyper == 0 ? "value='Room Full' disabled" : "value='Book'" ?>>
+                            <input class="btn btn-primary btn-lg" type = 'submit' <?php echo $hyper['roomSize'] == 0 ? "value='Room Full' disabled" : "value='Book'" ?>>
                         </form>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
 		<p>muhammadyusufazari@gmail.com</p>
 		<p>jl. kertopamuji no.10</p>
 </div>
-<div class="ol-12">
+<div class="col-12">
 	<hr class="light">
 	<h5>Hotel Sekawan</h5>
 

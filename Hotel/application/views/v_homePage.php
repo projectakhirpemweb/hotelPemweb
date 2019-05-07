@@ -227,7 +227,7 @@
                 <p>muhammadyusufazari@gmail.com</p>
                 <p>jl. kertopamuji no.10</p>
             </div>
-            <div class="ol-12">
+            <div class="col-12">
                 <hr class="light">
                 <h5>Hotel Sekawan</h5>
 
