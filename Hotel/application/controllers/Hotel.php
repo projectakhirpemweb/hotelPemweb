@@ -107,4 +107,8 @@ class Hotel extends CI_Controller {
         else return false;
     }
 
+    function transfer(){
+
+    }
+
 }

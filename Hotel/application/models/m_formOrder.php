@@ -119,7 +119,7 @@ class m_formOrder extends CI_Model {
                     <td>$datas->room_type</td>
                  </tr>
               </table>";
-            $data['status'] = 'Status : ' . $datas->order_status == 1 ? 'Lunas' : 'Belum Lunas';
+            $data['status'] = 'Status : ' . ($datas->order_status == true? 'Lunas' : 'Belum Lunas');
             return $data;
         }
     }
